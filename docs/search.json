@@ -6,12 +6,12 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T12:18:44-04:00"
+      "last_modified": "2022-07-05T12:30:17-04:00"
     },
     {
       "path": "index.html",
       "title": "Cars - CO2 Emissions and Effciency",
-      "description": "This projects goal is to help you make the most eco-friendly decision when buying a new car!\n",
+      "description": "This project's goal is to help you make the most eco-friendly decision when buying a new car!\n",
       "author": [
         {
           "name": "Akhilesh Sangaraju",
@@ -20,7 +20,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T12:18:47-04:00"
+      "last_modified": "2022-07-05T12:30:20-04:00"
     }
   ],
   "collections": []
