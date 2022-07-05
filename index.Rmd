@@ -12,6 +12,7 @@ library(rvest)
 library(ggthemes)
 library(janitor)
 library(dplyr)
+library(plotly)
 ```
 
 ```{r}
@@ -38,5 +39,22 @@ dataset |>
        subtitle= "Of the gas powered cars sold in the US, Honda's have the lowest average CO2 emissions",
        x = "Brand",
        y = "Average CO2 Emissions (G/km)")
+```
+
+```{r}
+dataset2 <- read.csv(file="ElectricCarData_Clean.csv")
+```
+
+```{r}
+EVdata <- dataset2 |>
+          select(Brand, Model, Range_Km, Efficiency_WhKm) |>
+          arrange(Brand) |>
+          ggplot(mapping = aes(x = Range_Km, y = Efficiency_WhKm, color = Brand, label = Model)) +
+          geom_point() +
+          theme_minimal() +
+          labs(title="Range and Efficiency of Different Electric Vehicles",
+               x = "Range (Km)",
+               y = "Effciency (Wh/KM)")
+ggplotly(EVdata)
 ```
 
