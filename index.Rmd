@@ -1,0 +1,42 @@
+---
+title: "AkhileshS-FinalProject"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+library(ggthemes)
+library(janitor)
+library(dplyr)
+```
+
+```{r}
+dataset <- read_csv(file="CO2Emissions.csv")
+dataset <- clean_names(dataset)
+```
+
+```{r}
+dataset |>
+  select(make, model, co2_emissions_g_km) |>
+  group_by(make) |>
+  mutate(num_models = n(), sum_emissions = sum(co2_emissions_g_km)) |>
+  summarize (make, average_emissions = sum_emissions / num_models) |>
+  ungroup() |>
+  unique() |>
+  ggplot(mapping = aes(x = make, y = average_emissions)) +
+  geom_col() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(size = 8)) +
+  theme(axis.text.x=element_text(angle = 90, vjust = 0.2)) +
+  theme(axis.title.y = element_text(margin = margin(t = 15, r = 0, b = 0, l = 0))) +
+  theme(axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0))) +
+  labs(title = "Average Tailpipe Emissions of CO2 by Car Brand",
+       subtitle= "Of the gas powered cars sold in the US, Honda's have the lowest average CO2 emissions",
+       x = "Brand",
+       y = "Average CO2 Emissions (G/km)")
+```
+
