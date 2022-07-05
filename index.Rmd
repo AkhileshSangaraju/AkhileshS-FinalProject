@@ -1,7 +1,10 @@
 ---
-title: "AkhileshS-FinalProject"
+title: "Cars - CO2 Emissions and Effciency"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  This project's goal is to help you make the most eco-friendly decision when buying a new car!
+author:
+  - name: Akhilesh Sangaraju 
+date: "`r Sys.Date()`"
 site: distill::distill_website
 ---
 
@@ -33,12 +36,14 @@ dataset |>
   theme_minimal() +
   theme(axis.text.x = element_text(size = 8)) +
   theme(axis.text.x=element_text(angle = 90, vjust = 0.2)) +
-  theme(axis.title.y = element_text(margin = margin(t = 15, r = 0, b = 0, l = 0))) +
+  theme(axis.title.x = element_text(margin = margin(t = 5, r = 0, b = 0, l = 0))) +
   theme(axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0))) +
   labs(title = "Average Tailpipe Emissions of CO2 by Car Brand",
        subtitle= "Of the gas powered cars sold in the US, Honda's have the lowest average CO2 emissions",
        x = "Brand",
-       y = "Average CO2 Emissions (G/km)")
+       y = "Average CO2 Emissions (G/km)") +
+  theme(plot.subtitle = element_text(size = 10)) +
+  theme(plot.title = element_text(face = "bold"))
 ```
 
 ```{r}
