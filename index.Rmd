@@ -45,7 +45,8 @@ dataset |>
        y = "Average CO2 Emissions (G/km)",
        caption = "Source: CO2 Emission by Vehicles") +
   theme(plot.subtitle = element_text(size = 10)) +
-  theme(plot.title = element_text(face = "bold"))
+  theme(plot.title = element_text(face = "bold")) +
+  coord_cartesian(ylim = c(100, 550))
 ```
 
 [@Emission]
