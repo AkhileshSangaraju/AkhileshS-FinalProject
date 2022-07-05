@@ -1,0 +1,35 @@
+---
+title: "Raw Data"
+description: |
+  Datasets used in this project.
+author:
+  - name: Akhilesh Sangaraju
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+library(ggthemes)
+library(janitor)
+library(dplyr)
+library(plotly)
+library(DT)
+```
+
+```{r}
+dataset <- read_csv(file="CO2Emissions.csv")
+dataset <- clean_names(dataset)
+datatable(dataset, options = list(scrollX = TRUE))
+```
+
+```{r}
+dataset2 <- read.csv(file="ElectricCarData_Clean.csv")
+datatable(dataset2, options = list(scrollX = TRUE))
+```
+
+
+
+

@@ -1,10 +1,21 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "About This Site"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+## About Me
+
+My name is Akhilesh Sangaraju, and I am currently a rising sophomore at Lexington High School. This site was part of my final project in Kane’s Free High School Data Science Bootcamp, which I decided to join due to my passion in coding, and my goal to become a programmer when I grow up. Some of my other hobbies include math, science, and biking.
+
+## About the project
+
+This project, titled *Cars - CO2 Emissions and Effciency*, was inspired by my interest in cars and aims to inform individuals on which ones are most eco-friendly, so they can make the right decision when it comes time for them to buy one for themselves. The first graph shows which companies produce the most efficient cars, and the second covers the amount of energy that different electric vehicles take to drive a kilometer. 
+
+## Contact Info
+
+* Github: https://github.com/AkhileshSangaraju
+* E-mail: sakhileshvarma@gmail.com

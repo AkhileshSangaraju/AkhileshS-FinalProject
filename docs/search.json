@@ -2,11 +2,10 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About This Site",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T12:53:19-04:00"
+      "contents": "\r\nAbout Me\r\nMy name is Akhilesh Sangaraju, and I am currently a rising sophomore\r\nat Lexington High School. This site was part of my final project in\r\nKane’s Free High School Data Science Bootcamp, which I decided to join\r\ndue to my passion in coding, and my goal to become a programmer when I\r\ngrow up. Some of my other hobbies include math, science, and biking.\r\nAbout the project\r\nThis project, titled Cars - CO2 Emissions and Effciency, was\r\ninspired by my interest in cars and aims to inform individuals on which\r\nones are most eco-friendly, so they can make the right decision when it\r\ncomes time for them to buy one for themselves. The first graph shows\r\nwhich companies produce the most efficient cars, and the second covers\r\nthe amount of energy that different electric vehicles take to drive a\r\nkilometer.\r\nContact Info\r\nGithub: https://github.com/AkhileshSangaraju\r\nE-mail: sakhileshvarma@gmail.com\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-05T15:10:10-04:00"
     },
     {
       "path": "index.html",
@@ -20,7 +19,21 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n(Podder 2020)\r\n\r\n\r\n\r\n\r\n\r\n\r\n(GEOFF839 2020)\r\n\r\n\r\n\r\nGEOFF839. 2020. EVs - One Electric Vehicle Dataset. Kaggle. https://www.kaggle.com/datasets/geoffnel/evs-one-electric-vehicle-dataset.\r\n\r\n\r\nPodder, Debajyoti. 2020. Co2 Emission by Vehicles. Kaggle. https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles.\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T12:53:25-04:00"
+      "last_modified": "2022-07-05T13:36:35-04:00"
+    },
+    {
+      "path": "RawData.html",
+      "title": "Raw Data",
+      "description": "Datasets used in this project.\n",
+      "author": [
+        {
+          "name": "Akhilesh Sangaraju",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-05T13:36:37-04:00"
     }
   ],
   "collections": []

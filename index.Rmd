@@ -63,7 +63,7 @@ EVdata <- dataset2 |>
           theme_minimal() +
           labs(title="Range and Efficiency of Different Electric Vehicles",
                x = "Range (Km)",
-               y = "Effciency (Wh/KM)")
+               y = "Effciency (Wh/KM - Lower is better)")
 ggplotly(EVdata)
 ```
 
