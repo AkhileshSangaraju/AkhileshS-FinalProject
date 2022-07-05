@@ -51,6 +51,10 @@ dataset |>
 
 [@Emission]
 
+The graph above shows the average tailpipe emission of carbon dioxide that cars from different companies produce during combined city and highway driving. It makes it clear that out of all the gas powered cars sold in the United States, Honda's are the most eco-friendly, while Lamborghini's are the least efficient and produce the most CO2. This information is very important when buying a regular car, however, some people know that they want to go full electric.
+
+*The graph below is interactive! Click Around!*
+
 ```{r}
 dataset2 <- read.csv(file="ElectricCarData_Clean.csv")
 ```
@@ -69,3 +73,6 @@ ggplotly(EVdata)
 ```
 
 [@EV]
+
+The graph above is for individuals who want to buy a fully electric car, but aren't sure if the range they offer is sufficient and are concerned about how much energy they consume. It shows the mileage of different EV's on a full tank and also the number of watts they consume per kilometer. From looking at the graph, one can quickly deduct that the new Tesla Roadster (not in production yet due to supply chain shortages) has the furthest range, while the Lightyear One is the most efficient. 
+
