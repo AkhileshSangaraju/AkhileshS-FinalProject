@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T12:30:17-04:00"
+      "last_modified": "2022-07-05T12:53:19-04:00"
     },
     {
       "path": "index.html",
@@ -19,8 +19,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T12:30:20-04:00"
+      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n(Podder 2020)\r\n\r\n\r\n\r\n\r\n\r\n\r\n(GEOFF839 2020)\r\n\r\n\r\n\r\nGEOFF839. 2020. EVs - One Electric Vehicle Dataset. Kaggle. https://www.kaggle.com/datasets/geoffnel/evs-one-electric-vehicle-dataset.\r\n\r\n\r\nPodder, Debajyoti. 2020. Co2 Emission by Vehicles. Kaggle. https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles.\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-05T12:53:25-04:00"
     }
   ],
   "collections": []

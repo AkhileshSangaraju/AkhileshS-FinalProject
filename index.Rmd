@@ -6,6 +6,7 @@ author:
   - name: Akhilesh Sangaraju 
 date: "`r Sys.Date()`"
 site: distill::distill_website
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -41,10 +42,13 @@ dataset |>
   labs(title = "Average Tailpipe Emissions of CO2 by Car Brand",
        subtitle= "Of the gas powered cars sold in the US, Honda's have the lowest average CO2 emissions",
        x = "Brand",
-       y = "Average CO2 Emissions (G/km)") +
+       y = "Average CO2 Emissions (G/km)",
+       caption = "Source: CO2 Emission by Vehicles") +
   theme(plot.subtitle = element_text(size = 10)) +
   theme(plot.title = element_text(face = "bold"))
 ```
+
+[@Emission]
 
 ```{r}
 dataset2 <- read.csv(file="ElectricCarData_Clean.csv")
@@ -63,3 +67,4 @@ EVdata <- dataset2 |>
 ggplotly(EVdata)
 ```
 
+[@EV]
