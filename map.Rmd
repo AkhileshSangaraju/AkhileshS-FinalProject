@@ -1,0 +1,53 @@
+---
+title: "MA Map"
+author:
+  - name: Akhilesh Sangaraju
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+library(ggthemes)
+library(janitor)
+library(dplyr)
+library(plotly)
+library(tidycensus)
+```
+
+```{r}
+dataset3 <- read_csv(file="Alternative_Fueling_Stations.csv")
+clean_data <- dataset3 |>
+  select(STATE, LONGITUDE, LATITUDE) |>
+  filter(STATE == "MA",
+         LATITUDE > 40) 
+```
+
+```{r}
+map <- get_decennial(geography = "tract",
+              state = "MA",
+              variables = "P001001",
+              output = "wide",
+              geometry = TRUE) |>
+       filter(! NAME %in% c("Alaska", "Hawaii", "Puerto Rico"))
+final_plot <- map |> 
+  ggplot() +
+  geom_sf() +
+  geom_point(data = clean_data, inherit.aes=FALSE, mapping = aes(x = LONGITUDE, y = LATITUDE)) +
+  theme_classic() +
+  theme(axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0))) +
+  theme(axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0))) +
+  labs(title = "Electric Vehicle Charging Stations across MA",
+       x = "Longitude",
+       y = "Latitude",
+       caption = "Source: U.S. Department of Transportation")
+ggsave("EV_station_plot.png",final_plot)
+```
+
+
+
+
+
+

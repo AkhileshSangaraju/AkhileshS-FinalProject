@@ -17,6 +17,8 @@ library(ggthemes)
 library(janitor)
 library(dplyr)
 library(plotly)
+library(tidycensus)
+library(knitr)
 ```
 
 ```{r}
@@ -76,3 +78,8 @@ ggplotly(EVdata)
 
 The graph above is for individuals who want to buy a fully electric car, but aren't sure if the range they offer is sufficient and are concerned about how much energy they consume. It shows the mileage of different EV's on a full tank and also the number of watts they consume per kilometer. From looking at the graph, one can quickly deduct that the new Tesla Roadster (not in production yet due to supply chain shortages) has the furthest range, while the Lightyear One is the most efficient. 
 
+```{r, echo = FALSE}
+include_graphics("EV_station_plot.png")
+```
+
+[@EVstation]
