@@ -27,8 +27,13 @@ datatable(dataset, options = list(scrollX = TRUE))
 
 ```{r}
 dataset2 <- read.csv(file="ElectricCarData_Clean.csv")
+dataset2 <- clean_names(dataset2)
 datatable(dataset2, options = list(scrollX = TRUE))
 ```
+
+Last data set was too large to render. View at link below:
+
+https://data-usdot.opendata.arcgis.com/datasets/alternative-fueling-stations/explore?location=5.645984%2C-79.792950%2C3.00&showTable=true
 
 
 
