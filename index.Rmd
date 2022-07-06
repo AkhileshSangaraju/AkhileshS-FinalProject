@@ -53,7 +53,7 @@ dataset |>
 
 [@Emission]
 
-The graph above shows the average tailpipe emission of carbon dioxide that cars from different companies produce during combined city and highway driving. It makes it clear that out of all the gas powered cars sold in the United States, Honda's are the most eco-friendly, while Lamborghini's are the least efficient and produce the most CO2. This information is very important when buying a regular car, however, some people know that they want to go full electric.
+The graph above shows the average tailpipe emission of carbon dioxide that cars from different companies produce during combined city and highway driving. It makes it clear that out of all the gas powered cars sold in the United States, Honda's are the most eco-friendly, while Bugatti's are the least efficient and produce the most CO2. This information is very important when buying a regular car, however, some people know that they want to go full electric.
 
 *The graph below is interactive! Click Around!*
 
