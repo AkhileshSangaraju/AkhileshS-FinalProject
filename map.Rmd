@@ -35,7 +35,7 @@ map <- get_decennial(geography = "tract",
 final_plot <- map |> 
   ggplot() +
   geom_sf() +
-  geom_point(data = clean_data, inherit.aes=FALSE, mapping = aes(x = LONGITUDE, y = LATITUDE)) +
+  geom_point(data = clean_data, inherit.aes=FALSE, mapping = aes(x = LONGITUDE, y = LATITUDE), color = "dodgerblue", size = 0.75) +
   theme_classic() +
   theme(axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0))) +
   theme(axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0))) +

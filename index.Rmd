@@ -9,6 +9,9 @@ site: distill::distill_website
 bibliography: bibliography.bib
 ---
 
+## Introduction
+According to the United States Environmental Protection Agency, carbon dioxide from transportation accounts for about 27% of total U.S. greenhouse gas emissions, making it the largest contributor to climate change. In fact, a typical passenger vehicle emits about 4.6 metric tons of carbon dioxide per year. This is why it is so important to make the right decision when buying a new car. It could prevent millions of premature deaths due to air pollution and increased temperatures over the next century.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
@@ -20,6 +23,8 @@ library(plotly)
 library(tidycensus)
 library(knitr)
 ```
+
+## Graphs
 
 ```{r}
 dataset <- read_csv(file="CO2Emissions.csv")
@@ -53,7 +58,11 @@ dataset |>
 
 [@Emission]
 
+
+### Analysis
+
 The graph above shows the average tailpipe emission of carbon dioxide that cars from different companies produce during combined city and highway driving. It makes it clear that out of all the gas powered cars sold in the United States, Honda's are the most eco-friendly, while Bugatti's are the least efficient and produce the most CO2. This information is very important when buying a gas powered car, however, some people know that they want to go full electric.
+
 
 *The graph below is interactive! Click Around!*
 
@@ -76,10 +85,19 @@ ggplotly(EVdata)
 
 [@EV]
 
+
+### Analysis
+
 The graph above is for individuals who want to buy a fully electric car, but aren't sure if the range they offer is sufficient and are concerned about how much energy they consume. It shows the mileage of different EV's on a full tank and also the number of watts they consume per kilometer. From looking at the graph, one can quickly deduct that the new Tesla Roadster (not in production yet due to supply chain shortages) has the furthest range, while the Lightyear One is the most efficient. 
+
 
 ```{r, echo = FALSE}
 include_graphics("EV_station_plot.png")
 ```
 
 [@EVstation]
+
+
+### Analysis
+
+
