@@ -100,4 +100,4 @@ include_graphics("EV_station_plot.png")
 
 ### Analysis
 
-
+The map above contains points that mark the location of different electric vehicle charging stations across the state of Massachusetts. It makes it clear that there are many charging stations avalable for an individual who is looking to buy an electric car, and proves that buying and daily driving one won't be a struggle. Along with the fact that they provide for a cleaner environment and are easy to charge up, electric vehicles come with many other benefits too. They deliver a better driving experience, they reduce noise pollution, that have increased resale value, and they have lower maintenance costs. 
