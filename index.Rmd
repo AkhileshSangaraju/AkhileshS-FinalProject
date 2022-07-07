@@ -41,7 +41,7 @@ dataset |>
   unique() |>
   ggplot(mapping = aes(x = make, y = average_emissions)) +
   geom_col(fill="dodgerblue") +
-  theme_minimal() +
+  theme_classic() +
   theme(axis.text.x = element_text(size = 8)) +
   theme(axis.text.x=element_text(angle = 90, vjust = 0.2)) +
   theme(axis.title.x = element_text(margin = margin(t = 5, r = 0, b = 0, l = 0))) +
@@ -76,7 +76,7 @@ EVdata <- dataset2 |>
           arrange(Brand) |>
           ggplot(mapping = aes(x = Range_Km, y = Efficiency_WhKm, color = Brand, label = Model)) +
           geom_point() +
-          theme_minimal() +
+          theme_classic() +
           labs(title="Range and Efficiency of Different Electric Vehicles",
                x = "Range (Km)",
                y = "Effciency (Wh/KM - Lower is better)")
