@@ -9,11 +9,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## About Me
 
-My name is Akhilesh Sangaraju, and I am currently a rising sophomore at Lexington High School. This site was part of my final project in Kane’s Free High School Data Science Bootcamp, which I decided to join due to my passion in coding, and my goal to become a programmer when I grow up. Some of my other hobbies include math, science, and biking.
+My name is **Akhilesh Sangaraju**, and I am currently a rising sophomore at Lexington High School. This site was part of my final project in [Kane’s Free High School Data Science Bootcamp](https://bootcamp.davidkane.info/), which I decided to partake in due to my passion in coding, and my goal to become a programmer when I grow up. Some of my other hobbies include math, science, and biking.
 
 ## About the project
 
-This project, titled *Cars - CO2 Emissions and Effciency*, was inspired by my interest in cars and aims to inform individuals on which ones are most eco-friendly, so they can make the right decision when it comes time for them to buy one for themselves. The first graph shows which companies produce the most efficient cars, and the second covers the amount of energy that different electric vehicles take to drive a kilometer. 
+This project, titled *Cars - CO2 Emissions and Effciency*, was inspired by my interest in cars and aims to inform individuals on which ones are most eco-friendly, so they can make the right decision when it comes time for them to buy one for themselves. The first graph shows which companies produce the most efficient gas powered cars, the second covers both the amount of energy that different electric vehicles take to drive a kilometer, and their total range, and the final graph shows the EV charging stations across Massachusetts. 
 
 ## Contact Info
 
