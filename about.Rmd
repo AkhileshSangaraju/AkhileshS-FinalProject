@@ -18,4 +18,5 @@ This project, titled *Cars - CO2 Emissions and Effciency*, was inspired by my in
 ## Contact Info
 
 * Github: https://github.com/AkhileshSangaraju
+* Repo: https://github.com/AkhileshSangaraju/CO2-Emissions-and-Effciency-of-Cars
 * E-mail: sakhileshvarma@gmail.com
