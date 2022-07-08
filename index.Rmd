@@ -1,5 +1,5 @@
 ---
-title: "Cars - CO2 Emissions and Effciency"
+title: "Cars - CO2 Emissions and Efficiency"
 description: |
   This project's goal is to help you make the most eco-friendly decision when buying a new car!
 author:
